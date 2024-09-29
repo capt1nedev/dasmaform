@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Registration Page</title>
+    <title>De La Salle University - Dasmariñas</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/en/8/8c/DLSU-Dasmari%C3%B1as_Seal.png"
+        type="image/x-icon">
     <style>
         body {
             font-family: 'Helvetica Neue', sans-serif;
@@ -118,15 +120,15 @@
                 <input type="text" id="title" name="title" required>
             </div>
 
-            <div class="form-group">
-                <label for="sy">School Year</label>
-                <input type="text" id="sy" name="sy" placeholder="XXXX-XXXX" pattern="\d{4}-\d{4}" required>
-            </div>
-
-            <!-- Date of Submission -->
-            <div class="form-group">
-                <label for="date">Date of Submission</label>
-                <input type="date" id="date" name="date" required>
+            <div class="form-group row">
+                <div class="col">
+                    <label for="sy">School Year</label>
+                    <input type="text" id="sy" name="sy" placeholder="XXXX-XXXX" pattern="\d{4}-\d{4}" required>
+                </div>
+                <div class="col">
+                    <label for="date">Date of Submission</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
             </div>
 
             <!-- Subject of Study -->
@@ -224,6 +226,27 @@
                 </div>
             </div>
 
+            <!-- Program -->
+            <div class="form-group row">
+                <div class="col">
+                    <label for="Program">Program</label>
+                    <select id="Program" name="Program" required>
+                        <option value="CPE">Computer Engineering</option>
+                        <option value="ECE">Electronics Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <label for="CoProgram">Co-Program</label>
+                    <select id="CoProgram" name="CoProgram">
+                        <option value="CPE">Computer Engineering</option>
+                        <option value="ECE">Electronics Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                    </select>
+                </div>
+            </div>
+
             <!-- Contact Information -->
             <h5>Contact Information</h5>
             <div class="form-group">
@@ -234,26 +257,6 @@
             <div class="form-group">
                 <label for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" placeholder="XXXX-XXXXXXX" pattern="[0-9]{10}" required>
-            </div>
-
-            <!-- Program -->
-            <div class="form-group">
-                <label for="Program">Program</label>
-                <select id="Program" name="Program" required>
-                    <option value="CPE">Computer Engineering</option>
-                    <option value="ECE">Electronics Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
-            </div>
-
-            <!-- Co-Program -->
-            <div class="form-group">
-                <label for="CoProgram">Co-Program</label>
-                <select id="CoProgram" name="CoProgram">
-                    <option value="CPE">Computer Engineering</option>
-                    <option value="ECE">Electronics Engineering</option>
-                    <option value="CE">Civil Engineering</option>
-                </select>
             </div>
 
             <!-- Submit Button -->
